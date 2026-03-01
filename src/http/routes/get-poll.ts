@@ -13,6 +13,14 @@ export async function getPoll(app: FastifyInstance) {
 			where: {
 				id: pollId,
 			},
+			include: {
+				options: {
+					select: {
+						id: true,
+						title: true,
+					},
+				},
+			},
 		});
 
 		return reply.send({ poll });

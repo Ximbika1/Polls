@@ -18,6 +18,7 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
+    "@fastify/cookie": "^11.0.2",
     "@prisma/adapter-pg": "^7.4.2",
     "fastify": "^5.7.4",
     "zod": "^4.0.8"
